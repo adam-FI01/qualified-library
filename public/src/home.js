@@ -1,9 +1,7 @@
 function getTotalBooksCount(books) {
-  if (books.length === 0) {
-    return 0;
-  } else {
-    return books.length;
-  }
+  return books.reduce((acc, book) => {
+    return acc + 1;
+  }, 0);
 }
 
 
